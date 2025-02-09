@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #444;
+        }
+
+        .product-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product p {
+            padding: 15px;
+            margin: 0;
+            font-size: 1.1em;
+            text-align: center;
+            background: #fafafa;
+            color: #555;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .product a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .product a:hover p {
+            color: #ff5722;
+        }
+
+        @media (max-width: 768px) {
+            .product p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="product-main">
+        <div class="product">
+            <a href="https://www.amazon.in/b?node=56815456031">
+                <img src="css/imggallery/b.png" alt="Fashion" width="300" height="300">
+            </a>
+            <div class="desc">"Fashion"</div>
+        </div>
+
+        <div class="product">
+            <a
+                href="https://www.amazon.in/s?k=kitchen+products&i=kitchen&crid=49SIVITU93MB&sprefix=kitchen+products%2Ckitchen%2C308&ref=nb_sb_noss_2">
+                <img src="css/imggallery/d.png" alt="Kitchen" width="300" height="300">
+            </a>
+            <div class="desc">"Kitchen Products"</div>
+        </div>
+
+        <div class="product">
+            <a
+                href="https://www.amazon.in/s?k=beauty+sale&crid=2C66XDK34L6S9&sprefix=beauty+sale%2Caps%2C318&ref=nb_sb_noss_1">
+                <img src="css/imggallery/c.png" alt="Beauty" width="300" height="300">
+            </a>
+            <div class="desc">"Beauty Products"</div>
+        </div>
+
+        
+        <div class="product">
+           <a href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">
+                <img src="css/imggallery/e.png" alt="Electronics" width="300" height="300">
+            </a>
+            <div class="desc">"Electronics"</div>
+        </div>
+
+        <div class="product">
+            <a href="https://www.amazon.in/s?k=earbuds&adgrpid=1315017515020066&hvadid=82188866223409&hvbmt=be&hvdev=c&hvlocphy=156723&hvnetw=o&hvqmt=e&hvtargid=kwd-82189472433778%3Aloc-90&hydadcr=23086_2301017&msclkid=313e5d9ef11f1cb9aae13a39f66800c8&tag=msndeskstdin-21&ref=pd_sl_oxodfgpgn_e">
+                 <img src="css/imggallery/f.jpeg" alt="Earbuds" width="300" height="300">
+             </a>
+             <div class="desc">"Earbuds"</div>
+         </div>
+
+         <div class="product">
+            <a href="https://www.amazon.in/s?k=shoes+runner&adgrpid=1322714095367769&hvadid=82669897710340&hvbmt=be&hvdev=c&hvlocphy=157407&hvnetw=o&hvqmt=e&hvtargid=kwd-82670511755290%3Aloc-90&hydadcr=5841_2377831&msclkid=9e744eb564721dee218a29126c7f928b&tag=msndeskstdin-21&ref=pd_sl_4mjojqlbrw_e">
+                 <img src="css/imggallery/s.jpeg" alt="Shoes" width="300" height="300">
+             </a>
+             <div class="desc">"Shoes"</div>
+         </div>
+
+         <div class="product">
+            <a href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">
+                 <img src="css/imggallery/w.jpeg" alt="Watch" width="300" height="300">
+             </a>
+             <div class="desc">"Watch"</div>
+         </div>
+
+         <div class="product">
+            <a href="https://www.amazon.in/s?k=stationary&adgrpid=1328211651903230&hvadid=83013487277371&hvbmt=be&hvdev=c&hvlocphy=154699&hvnetw=o&hvqmt=e&hvtargid=kwd-83014105173029%3Aloc-90&hydadcr=5127_2219138&msclkid=68a6bd666e12155bd024dace40d93ed5&tag=msndeskstdin-21&ref=pd_sl_4mot9qkltr_e">
+                 <img src="css/imggallery/stat.jpeg" alt="Watch" width="300" height="300">
+             </a>
+             <div class="desc">"Stationary"</div>
+         </div>
+
+         <div class="product">
+            <a href="https://www.amazon.in/s?k=eco+friendly+decor&adgrpid=1323813606108906&hvadid=82738620592448&hvbmt=be&hvdev=c&hvlocint=141981&hvlocphy=156723&hvnetw=o&hvqmt=e&hvtargid=kwd-82739225935460%3Aloc-90&hydadcr=560_2680819&msclkid=bc8292c40cc118a4160df56c23fd6ee2&tag=msndeskstdin-21&ref=pd_sl_t482cewx4_e">
+                 <img src="css/imggallery/decor.jpeg" alt="Watch" width="300" height="300">
+             </a>
+             <div class="desc">"Home Decoration"</div>
+         </div>
+        
+    </div>
+</body>
+</html>
